@@ -27,13 +27,33 @@
     align-items: center;
   }
 
-  & > img {
+  .image {
     width: 100%;
     border-radius: 10px;
     cursor: pointer;
 
-    &:hover {
-      filter: hue-rotate(178deg) saturate(100%) brightness(50%);
+    position: relative;
+
+    & > svg {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    &:hover svg {
+      display: block;
+    }
+
+    &:hover img {
+      filter: hue-rotate(332deg);
+    }
+
+    img {
+      width: 100%;
+
+      
     }
   }
 
