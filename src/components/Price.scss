@@ -1,0 +1,11 @@
+.price {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  color: hsl(178, 100%, 50%);
+
+  & > svg {
+    margin-right: 10px;
+  }
+}
